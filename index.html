@@ -211,9 +211,11 @@
         }
 
         .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 3rem;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .feature-card {
@@ -257,6 +259,15 @@
         .feature-card p {
             color: #64748b;
             line-height: 1.6;
+        }
+
+        .feature-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-top: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
         }
 
         /* CTA Footer */
@@ -331,10 +342,6 @@
 
             .hero-buttons {
                 justify-content: center;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
             }
 
             .cta-content h2 {
@@ -431,6 +438,7 @@
                     </div>
                     <h3>Your Friends, Their Charities, All in One Place</h3>
                     <p>See and scroll through friends-charity transactions to see giving activity that interests you.</p>
+                    <img src="assets/nova venmo feed wireframe.png" alt="Nova Venmo Feed Wireframe">
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -440,6 +448,7 @@
                     </div>
                     <h3>Band Together Around a Cause</h3>
                     <p>The donor group chat is the first means of engagement for users to dive into giving.</p>
+                    <img src="assets/nova gc wireframe.png" alt="Nova Group Chat Wireframe">
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -449,6 +458,7 @@
                     </div>
                     <h3>Curated List of Causes at your Fingertips</h3>
                     <p>Effortlessly find causes important to your values and add them to your charity pipeline.</p>
+                    <img src="assets/nova explore page.png" alt="Nova Explore Page Wireframe">
                 </div>
             </div>
         </div>
